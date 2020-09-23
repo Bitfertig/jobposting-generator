@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPosting generator</title>
+    <meta name="keywords" content="jobposting, generator, json, script">
+    <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
+</head>
+<body>
+    
+    <div id="app"></div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164640273-2"></script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function(event) {
+		if ( location.host == 'tools.bitfertig.de' ) {
+	
+			// <base href="http://tools.bitfertig.de/jobposting-generator/">
+			var base = document.createElement('base');
+			base.href = 'http://tools.bitfertig.de/jobposting-generator/';
+			document.querySelector('head').appendChild(base);
+
+			// Google Tag Manager
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-164640273-2', { 'anonymize_ip': true });
+		}
+	});
+	</script>
+
+</body>
+</html>
